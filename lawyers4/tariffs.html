@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <title>دفتر وکالت</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/modernizr.custom.js"></script>
+
+
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-offset="0" data-target="#theMenu">
+
+<!-- Menu -->
+<nav class="menu" id="theMenu">
+    <div class="menu-wrap">
+        <h1 style="visibility: hidden" class="logo"><a href="index.html#home">Minimal</a></h1>
+        <i class="fa-remove menu-close fa"></i>
+        <a href="index.html" class="smoothScroll">خانه</a>
+        <a href="service.html" class="smoothScroll">خدمات</a>
+
+        <a href="tariffs.html" class="smoothScroll">تعرفه ها</a>
+        <a href="give-time.html" class="smoothScroll"> وقت گرفتن</a>
+
+        <a href="#portfolio" data-toggle="modal" data-target="#squarespaceModal" class="smoothScroll">پیگیری پرونده</a>
+        <a href="#"><i class="fa-facebook fa"></i></a>
+        <a href="#"><i class="fa-twitter fa"></i></a>
+        <a href="#"><i class="fa-dribbble fa"></i></a>
+        <a href="#"><i class="fa-envelope fa"></i></a>
+    </div>
+
+    <!-- Menu button -->
+    <div id="menuToggle"><i class="fa-reorder fa"></i></div>
+</nav>
+
+
+
+<!-- ========== HEADER SECTION ========== -->
+<section id="home" name="home"></section>
+<div id="headerwrap">
+    <div class="container">
+        <div class="logo animated slideInDown">
+            <img src="assets/img/logo.png" width="100">
+        </div>
+        <button class="log-in animated slideInDown" data-toggle="modal" data-target="#squarespaceModal">
+
+            ورود
+        </button>
+        <br>
+        <div class="row">
+
+                <div class="col-md-12 animated slideInUp">
+                    <table class="tariffs">
+                        <tbody>
+                        <tr>
+                            <td>
+                                تعرفه
+                            </td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                تعرفه
+                            </td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                تعرفه
+                            </td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                تعرفه
+                            </td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                تعرفه
+                            </td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+
+
+            </div>
+        </div>
+    </div><!-- /container -->
+</div><!-- /headerwrap -->
+
+<div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">✕</button>
+                <h3 class="centered">ورود به سایت</h3>
+            </div>
+            <div class="modal-body" style="text-align:center;">
+                <div class="row-fluid">
+                    <div class="span10 offset1">
+                        <div id="modalTab">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="login">
+                                    <form method="post" action='' name="login_form">
+                                        <p><input type="text" class="span12" name="eid" id="" placeholder="نام کاربری">
+                                        </p>
+                                        <p><input type="password" class="span12" name="passwd" placeholder="رمز عبور">
+                                        </p>
+                                        <p>
+                                            <button type="submit" class="btn btn-primary">ورود</button>
+                                            <a href="#forgotpassword" data-toggle="tab" style="color: #333">رمز عبور خود
+                                                را فراموش کرده اید ؟</a>
+                                        </p>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="forgotpassword">
+                                    <form method="post" action='' name="forgot_password">
+                                        <p style="color: #333">برای بازیابی رمز عبور، ایمیل خود را وارد کنید</p>
+
+                                        <p>
+                                            <input type="text" class="span12" name="eid" id="email" placeholder="ایمیل">
+                                        </p>
+                                        <p>
+                                            <button type="submit" class="btn btn-primary">ارسال</button>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/classie.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/smoothscroll.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
